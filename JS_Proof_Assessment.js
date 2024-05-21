@@ -14,17 +14,17 @@ let NFT_Container = [];
 // this function will take in some values as parameters, create an
 // NFT object using the parameters passed to it for its metadata,
 // and store it in the variable above.
-function mintNFT (id, name, caliber, mag_size, no_of_shells, fire_rate, damage, range, accuracy){
+function mintNFT (_id_, _name_, _caliber_, _mag_size_, _no_of_shells_, _fire_rate_, _damage_, _range_, _accuracy_){
     let G_NFTs = {
-        id: id,
-        name: name,
-        caliber: caliber,
-        mag_size: mag_size,
-        no_of_shells: no_of_shells,
-        fire_rate: fire_rate,
-        damage: damage,
-        range: range,
-        accuracy: accuracy
+        id: _id_,
+        name: _name_,
+        caliber: _caliber_,
+        mag_size: _mag_size_,
+        no_of_shells: _no_of_shells_,
+        fire_rate: _fire_rate_,
+        damage: _damage_,
+        range: _range_,
+        accuracy: _accuracy_
     };
     NFT_Container.unshift(G_NFTs);
     console.log("\nNFT Minted Successfully! Ready to Rock and Roll Again!!!");
